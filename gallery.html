@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="container">
+          <div class="navbar">
+            <a class="logo" href="index.html"
+              ><img src="i/logo.svg" class="img img-fluid"
+            /></a>
+
+            <div class="menu-container">
+              <span class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+
+              <nav id="menu" class="menu">
+                <span class="menu-button menu-button_about in-mobile">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+
+                <ul class="menu-wrap">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="service.html">Service</a></li>
+                  <li class="has-submenu">
+                    <a class="is-submenu" href="#">Pages</a>
+                    <ul>
+                      <li><a href="gallery.html">Cake Gallery</a></li>
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="dark-overlay" class="dark-overlay"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="gallery-bg">
+      <div class="container">
+        <div class="gallery-bg__div">
+          <p class="gallery-bg__text">Cake Gallery</p>
+        </div>
+      </div>
+    </section>
+    <section class="slider">
+      <div class="container">
+        <div class="block">
+          <h2 class="block__title">Cake Gallery</h2>
+          <h2 class="block__tit">Our Beautifull Cake</h2>
+          <p class="block__lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+        </div>
+        <div class="swiper2" id="swiper2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper2">
+              <img src="i/wedding_cake.jpg" class="img-fluid swiper2-slide" />
+              <span class="swiper2__pagination">Wedding Cake</span>
+            </div>
+            <div class="swiper-slide swiper2">
+              <img src="i/gallery2.jpg" class="img-fluid swiper2-slide" />
+              <span class="swiper2__pagination">Chocolate Cake</span>
+            </div>
+            <div class="swiper-slide swiper2">
+              <img src="i/summer_cake.jpg" class="img-fluid swiper2-slide" />
+              <span class="swiper2__pagination">Summer Cake</span>
+            </div>
+            <div class="swiper-slide swiper2">
+              <img src="i/birthday_cake.jpg" class="img-fluid swiper2-slide" />
+              <span class="swiper2__pagination">Birthday Cake</span>
+            </div>
+            <div class="swiper-slide swiper2">
+              <img src="i/muffin_cake.jpg" class="img-fluid swiper2-slide" />
+              <span class="swiper2__pagination">Muffin Cake</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="event">
+      <article class="event__post">
+        <h2 class="event__every">Every Event</h2>
+        <h2 class="event__title-main">Cake for Every Occasion</h2>
+        <p class="event__lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+      </article>
+      <article class="event__party">
+        <div class="event__item event__item_birthday">
+          <div class="event__icon">
+            <svg class="svg-icon icon-event event__birthday">
+              <use xlink:href="i/sprite.svg#birthday"></use>
+            </svg>
+          </div>
+          <h2 class="event__title">Birthday Party</h2>
+          <p class="event__lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <button class="event__btn">
+            <a class="event__btn_text" href="#">Learn More</a>
+          </button>
+        </div>
+        <div class="event__item event__item_wedding">
+          <div class="event__icon">
+            <svg class="svg-icon icon-event event__wedding">
+              <use xlink:href="i/sprite.svg#wedding"></use>
+            </svg>
+          </div>
+          <h2 class="event__title">Wedding Party</h2>
+          <p class="event__lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <button class="event__btn">
+            <a class="event__btn_text" href="#">Learn More</a>
+          </button>
+        </div>
+        <div class="event__item event__item_formal">
+          <span class="event__icon">
+            <svg class="svg-icon icon-event">
+              <use xlink:href="i/sprite.svg#formal"></use>
+            </svg>
+          </span>
+          <h2 class="event__title">Formal Party</h2>
+          <p class="event__lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt.
+          </p>
+          <button class="event__btn">
+            <a class="event__btn_text" href="#">Learn More</a>
+          </button>
+        </div>
+      </article>
+    </section>
+    <section class="follow">
+      <div class="container follow__grid">
+        <article class="follow__post">
+          <h2 class="follow__title">Follow Us</h2>
+          <h2 class="follow__subtitle">Let's Follow Us On Our Social Media</h2>
+          <p class="follow__lorem">
+            Lorem ipsum dolorr sit amet, consectetuer adipiiscing elite. Aenean
+            quis commodoo ligula eget dolor. Aeneanan massa. Cum socies natoque
+            penatibus etapi magnis dis parturients montes, nascetur ridiculus
+            mus cume. Donenect quam felis, ultricies nec, pellentesque eu,
+            pretiumus quis, sem In.
+          </p>
+          <div class="info__icons-media">
+            <span class="info__item">
+              <svg class="svg-icon info__media-icon">
+                <use xlink:href="i/sprite.svg#facebook"></use>
+              </svg>
+            </span>
+            <span class="info__item">
+              <svg class="svg-icon info__media-icon">
+                <use xlink:href="i/sprite.svg#twitter"></use>
+              </svg>
+            </span>
+            <span class="info__item">
+              <svg class="svg-icon info__media-icon">
+                <use xlink:href="i/sprite.svg#youtube"></use>
+              </svg>
+            </span>
+          </div>
+        </article>
+        <article class="follow__imgs">
+          <div class="follow__img follow__img_first">
+            <img src="i/cake_right.jpg" class="img-fluid" />
+          </div>
+          <div class="follow__img follow__img_second">
+            <img src="i/gallery-second.jpg" alt="" class="img-fluid" />
+          </div>
+          <div class="follow__img follow__img_third">
+            <img src="i/saw.jpg" class="img-fluid" />
+          </div>
+        </article>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <article class="footer__content">
+          <div class="footer__img">
+            <img src="i/white.svg" class="img-fluid" alt="white logo" />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="about.html">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Destination</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__theme">© 2021 Cakecane by Jegtheme</div>
+        </article>
+      </div>
+    </footer>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/ssm.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

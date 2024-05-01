@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="container">
+          <div class="navbar">
+            <a class="logo" href="index.html"
+              ><img src="i/logo.svg" class="img img-fluid"
+            /></a>
+
+            <div class="menu-container">
+              <span class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+
+              <nav id="menu" class="menu">
+                <span class="menu-button menu-button_about in-mobile">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+
+                <ul class="menu-wrap">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="service.html">Service</a></li>
+                  <li class="has-submenu">
+                    <a class="is-submenu" href="#">Pages</a>
+                    <ul>
+                      <li><a href="gallery.html">Cake Gallery</a></li>
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="dark-overlay" class="dark-overlay"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="contact-bg">
+      <div class="container">
+        <div class="contact-bg__div">
+          <p class="contact-bg__text">Contact Us</p>
+        </div>
+      </div>
+    </section>
+    <section class="info">
+      <div class="container info__grid">
+        <div class="info__left">
+          <article class="post">
+            <h2 class="info__contact">Contact us</h2>
+            <h2 class="info__title">Get In Touch</h2>
+            <p class="info__lorem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
+              ad minim veniam.
+            </p>
+          </article>
+          <article class="info__icons">
+            <div class="info__box">
+              <div class="info__bg">
+                <svg class="svg-icon info__icon">
+                  <use xlink:href="i/sprite.svg#map"></use>
+                </svg>
+              </div>
+              <div class="info__right">
+                <h2 class="info__tit">Location</h2>
+                <p class="info__descr">Sunset Road VIC 3052, Bali</p>
+              </div>
+            </div>
+            <div class="info__box">
+              <div class="info__bg">
+                <svg class="svg-icon info__icon">
+                  <use xlink:href="i/sprite.svg#phone"></use>
+                </svg>
+              </div>
+              <div class="info__right">
+                <h2 class="info__tit">Phone</h2>
+                <p class="info__descr">+(62) 85-964-47-25</p>
+              </div>
+            </div>
+            <div class="info__box">
+              <div class="info__bg">
+                <svg class="svg-icon info__icon">
+                  <use xlink:href="i/sprite.svg#email"></use>
+                </svg>
+              </div>
+              <div class="info__right">
+                <h2 class="info__tit">Email</h2>
+                <p class="info__descr">dometric@domain.com</p>
+              </div>
+            </div>
+            <div class="info__box info__line">
+              <div class="info__bg">
+                <svg class="svg-icon info__icon">
+                  <use xlink:href="i/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="info__right">
+                <h2 class="info__tit">Work Hours</h2>
+                <p class="info__descr">Mon - Tue : 09:00 - 18:00</p>
+              </div>
+            </div>
+          </article>
+          <article class="info__media">
+            <h2 class="info__tit">Social Media</h2>
+            <p class="info__lorem">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua Ut enim
+              ad minim veniam.
+            </p>
+            <div class="info__icons-media">
+              <span class="info__item">
+                <svg class="svg-icon info__media-icon">
+                  <use xlink:href="i/sprite.svg#facebook"></use>
+                </svg>
+              </span>
+              <span class="info__item">
+                <svg class="svg-icon info__media-icon">
+                  <use xlink:href="i/sprite.svg#twitter"></use>
+                </svg>
+              </span>
+              <span class="info__item">
+                <svg class="svg-icon info__media-icon">
+                  <use xlink:href="i/sprite.svg#youtube"></use>
+                </svg>
+              </span>
+            </div>
+          </article>
+        </div>
+        <div class="info__right">
+          <article class="info__form-box">
+            <form
+              action=""
+              name="name"
+              class="info__form js-val"
+              autocomplete="off"
+            >
+              <label for="name-input"></label>
+              <input
+                id="name-input"
+                type="text"
+                class="info__string"
+                placeholder="Your Name"
+              />
+            </form>
+            <form
+              action=""
+              name="email"
+              class="info__form js-val"
+              autocomplete="off"
+            >
+              <label for="email-input"></label>
+              <input
+                id="email-input"
+                type="text"
+                class="info__string"
+                placeholder="Your Email"
+              />
+            </form>
+            <form
+              action=""
+              name="subject"
+              class="info__form js-val"
+              autocomplete="off"
+            >
+              <label for="subject-input"></label>
+              <input
+                id="subject-input"
+                type="text"
+                class="info__string"
+                placeholder="Your Subject"
+              />
+            </form>
+            <form
+              action=""
+              name="message"
+              class="info__form js-val"
+              autocomplete="off"
+            >
+              <label for="message-input"></label>
+              <input
+                id="message-input"
+                type="text"
+                class="info__string info__string_last"
+                placeholder="Your Message"
+              />
+            </form>
+            <button id="submitAllBtn" class="info__btn" type="button">
+              Send message
+            </button>
+          </article>
+        </div>
+        <div id="map"></div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <article class="footer__content">
+          <div class="footer__img">
+            <img src="i/white.svg" class="img-fluid" alt="white logo" />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="about.html">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Destination</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__theme">© 2021 Cakecane by Jegtheme</div>
+        </article>
+      </div>
+    </footer>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/ssm.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const submitAllBtn = document.getElementById("submitAllBtn");
+
+        submitAllBtn.addEventListener("click", function () {
+          const forms = document.querySelectorAll(".js-val");
+          let isValid = true;
+
+          forms.forEach(function (form) {
+            const inputs = form.querySelectorAll("input[type='text']");
+
+            inputs.forEach(function (input) {
+              if (!input.value.trim()) {
+                isValid = false;
+                Toastify({
+                  text: `${input.getAttribute("placeholder")} can't be empty`,
+                  duration: 3000,
+                  gravity: "top",
+                  backgroundColor: "red",
+                }).showToast();
+              }
+            });
+
+            if (isValid) {
+              form.reset();
+            }
+          });
+
+          if (isValid) {
+            Toastify({
+              text: "All forms submitted successfully",
+              duration: 3000,
+              gravity: "top",
+              backgroundColor: "#074838",
+            }).showToast();
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

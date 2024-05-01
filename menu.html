@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+
+    <title>Menu</title>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="container">
+          <div class="navbar">
+            <a class="logo" href="index.html"
+              ><img src="i/logo.svg" class="img img-fluid"
+            /></a>
+
+            <div class="menu-container">
+              <span class="menu-button">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+
+              <nav id="menu" class="menu">
+                <span class="menu-button menu-button_about in-mobile">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
+
+                <ul class="menu-wrap">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About us</a></li>
+                  <li><a href="service.html">Service</a></li>
+                  <li class="has-submenu">
+                    <a class="is-submenu" href="#">Pages</a>
+                    <ul>
+                      <li><a href="gallery.html">Cake Gallery</a></li>
+                      <li><a href="menu.html">Menu</a></li>
+                      <li><a href="404.html">404 Page</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div id="dark-overlay" class="dark-overlay"></div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <section class="menu-bg">
+      <div class="container">
+        <div class="menu-bg__div">
+          <p class="menu-bg__text">Our Menu</p>
+        </div>
+      </div>
+    </section>
+    <section class="favorite pt">
+      <article class="container favorite__description">
+        <h2 class="favorite__featured">Featured</h2>
+        <h2 class="favorite__title">Featured Cake</h2>
+        <p class="favorite__lorem">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+          tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+        </p>
+        <div class="buttons">
+          <button class="catalog__button active js-btn" data-target="menu-cake">
+            Cake<span class="catalog__line"></span>
+          </button>
+          <button
+            class="catalog__button catalog__opacity js-btn"
+            data-target="menu-dessert"
+          >
+            Dessert<span class="catalog__line"></span>
+          </button>
+          <button
+            class="catalog__button catalog__opacity js-btn"
+            data-target="menu-muffin"
+          >
+            Muffin<span class="catalog__line"></span>
+          </button>
+        </div>
+        <div id="menu-cake" class="catalog active">
+          <article class="catalog__cake">
+            <figure class="catalog__item catalog__item_first">
+              <img
+                class="img-fluid catalog__img catalog__img_first"
+                src="i/cake_right.jpg"
+              />
+              <div class="catalog__favorite">Favorite</div>
+              <figcaption class="catalog__descr">
+                Full Choco Cake <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_second">
+              <img
+                class="img-fluid catalog__img catalog__img_second"
+                src="i/red_cake.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Red Velvet Cake <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_third">
+              <img
+                class="img-fluid catalog__img catalog__img_third"
+                src="i/white_cake.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Wedding Cake <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_fourth">
+              <img
+                class="img-fluid catalog__img catalog__img_fourth"
+                src="i/wildberry_cake.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Blueberry Cake <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <div class="btn-container">
+              <button class="catalog__btn">
+                <a href="menu.html" class="catalog__btn_text">see more</a>
+              </button>
+            </div>
+          </article>
+        </div>
+        <div id="menu-dessert" class="catalog hide">
+          <article class="catalog__cake">
+            <figure class="catalog__item catalog__item_first">
+              <img
+                class="img-fluid catalog__img catalog__img_first"
+                src="i/brown_jpg.jpg"
+              />
+              <div class="catalog__favorite">Favorite</div>
+              <figcaption class="catalog__descr">
+                Choco Lava Cake <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_second">
+              <img
+                class="img-fluid catalog__img catalog__img_second"
+                src="i/yellow_cup.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Pumpkin Dessert <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_third">
+              <img
+                class="img-fluid catalog__img catalog__img_third"
+                src="i/waffle.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Berry Waffle <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_fourth">
+              <img
+                class="img-fluid catalog__img catalog__img_fourth"
+                src="i/sweet_taco.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Sweet Taco <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <div class="btn-container">
+              <button class="catalog__btn">see more</button>
+            </div>
+          </article>
+        </div>
+        <div id="menu-muffin" class="catalog hide">
+          <article class="catalog__cake">
+            <figure class="catalog__item catalog__item_first">
+              <img
+                class="img-fluid catalog__img catalog__img_first"
+                src="i/muffin.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Choco Cup Cakes <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_second">
+              <img
+                class="img-fluid catalog__img catalog__img_second"
+                src="i/rainbow.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Cup Cakes Packages <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_third">
+              <img
+                class="img-fluid catalog__img catalog__img_third"
+                src="i/pink.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Strawberry Muffin<span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <figure class="catalog__item catalog__item_fourth">
+              <img
+                class="img-fluid catalog__img catalog__img_fourth"
+                src="i/wildberry_muffin.jpg"
+              />
+
+              <figcaption class="catalog__descr">
+                Blueberry Maffin <span class="price">$20</span>
+              </figcaption>
+            </figure>
+            <div class="btn-container">
+              <button class="catalog__btn">see more</button>
+            </div>
+          </article>
+        </div>
+      </article>
+    </section>
+    <section class="menues menues-bg">
+      <article class="container price">
+        <article class="price__item">
+          <h2 class="price__title">Our Menu</h2>
+          <p class="price__lorem">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+          </p>
+          <button class="price__btn">
+            <a href="menu.html" class="price__btn_text">see more</a>
+          </button>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Coffee - Choco Cake</span
+            ><span class="price__right">$20</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Chocolate Cake with Coffee Cream</p>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Strawberry Sponge Cake</span
+            ><span class="price__right">$20</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Sponge Cake Strawberry Taste</p>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Full Choco Muffin</span
+            ><span class="price__right">$20</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Muffin Cake With Chocolate Filling</p>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Vanilla Cheese Cake</span
+            ><span class="price__right">$20</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Vanilla and Cheese on Cake</p>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Red Velvet Cake</span
+            ><span class="price__right">$20</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Red Velvet Cake</p>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Blueberry Cake</span
+            ><span class="price__right">$20</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Cake with Blueberry Jam</p>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Blueberry Cream Muffin</span
+            ><span class="price__right">$20</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Muffin with Blueberry Cream</p>
+        </article>
+        <article class="price__item">
+          <h5 class="price__name">
+            <span class="price__left">Banana Choco Cake</span
+            ><span class="price__right">$23</span>
+          </h5>
+          <div class="price__line"></div>
+          <p class="price__descr">Banana Cake with Chocolate Cream</p>
+        </article>
+      </article>
+    </section>
+
+    <section class="form">
+      <article class="form__content">
+        <h2 class="form__title">
+          Get News, Updates, And More When You Join Our Newsletter
+        </h2>
+
+        <form
+          class="form__group js-validate"
+          action=""
+          name="your_email_address"
+          autocomplete="off"
+        >
+          <div class="form__space">
+            <input
+              type="text"
+              class="form__place"
+              id="email"
+              placeholder="Your Email Address"
+            />
+          </div>
+          <span class="form__valid hide">Form can't be empty</span>
+          <button class="form__btn" type="submit" value="Subscribe">
+            Subscribe
+          </button>
+        </form>
+      </article>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <article class="footer__content">
+          <div class="footer__img">
+            <img src="i/white.svg" class="img-fluid" alt="white logo" />
+          </div>
+          <nav class="footer__nav">
+            <ul class="footer__menu">
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Home</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="about.html">About Us</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="index.html">Destination</a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__theme">© 2021 Cakecane by Jegtheme</div>
+        </article>
+      </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/ssm.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
